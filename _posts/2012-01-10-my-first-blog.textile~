@@ -1,0 +1,10 @@
+---
+layout: post
+title: My First Blog on Github
+---
+
+h1. {{ page.title }}
+
+p(meta). 10 Jan 2012 - Mumbai
+
+This is just a beginning.
