@@ -3,11 +3,13 @@ layout: post
 title: Cron jobs using whenever
 ---
 
-h1. {{ page.title }}
+h2. {{ page.title }}
 
-p(meta). 16 Jan 2012 - Mumbai
+<h5><small>16 Jan 2012 - Mumbai</small></h5>
 
-In classpro, we need to send automatic fees reminder to the students. So i was searching for setting up cron jobs.
+<br/>
+
+At classpro, we need to send automatic fees reminder to the students. So i was searching for setting up cron jobs.
 
 Since we are using Ruby on Rails 3.1 for development. I googled for setting up cron jobs for rails.
 
@@ -22,8 +24,7 @@ The schedule resides in a configuration file named “crontab”. That’s where
 
 Syntax
 Here is a simple cron job:
-0 5 * * * /bin/bash -l -c 'automysqlbackup.sh' >> /var/log/cron.log
-
+<pre class="prettyprint linenums">0 5 * * * /bin/bash -l -c 'automysqlbackup.sh' >> /var/log/cron.log</pre>
 
 There are three main parts:
 1. The first part is “* * * * *”. This is where we schedule the timer.
@@ -41,16 +42,16 @@ It consists of five parts:
     day of week
 
 Editing the Crontab:
-crontab -e  
+<pre class="prettyprint linenums">crontab -e</pre>
 
 If you would just like to see the existing crontab without editing it, you can run this command:
-crontab -l  
+<pre class="prettyprint linenums">crontab -l</pre>
 
 To delete the contents of the crontab:
-crontab -r  
+<pre class="prettyprint linenums">crontab -r</pre>
 
 To restart cron jobs:
-restart cron
+<pre class="prettyprint linenums">restart cron</pre>
 
 
 
