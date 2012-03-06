@@ -1,0 +1,23 @@
+---
+layout: post
+title: Why Ruby?
+---
+
+h2. {{ page.title }}
+
+<h5><small>6 March 2012 - Mumbai</small></h5>
+
+<br/>
+
+These days a lot people asked me why I chose ruby.
+I am talking about the language, not the Rails Framework built on top of Ruby. Lots of people gets confused with Ruby and Rails.
+But i will admit that I was fascinated towards Ruby through Rails. I will save Rails for another post.
+
+<pre>
+Why Ruby,
+With Ruby I can express myself through computer with less and
+beautiful code. The code which you will love and wants to flaunt it.
+Ruby makes you think differently to write beautiful code with clear thinking and creatively.
+</pre>
+
+<strong>P.S.</strong> It's not just infatuation but I am in Love with Ruby.

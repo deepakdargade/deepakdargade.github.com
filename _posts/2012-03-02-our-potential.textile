@@ -5,13 +5,13 @@ title: Our Potential
 
 h2. {{ page.title }}
 
-<h5><small>16 Jan 2012 - Mumbai</small></h5>
+<h5><small>16 Feb 2012 - Mumbai</small></h5>
 
 <br/>
 
 Today I got an intersting newsletter from <a href="http://gapingvoid.com/" target="_blank">gapingvoid.com</a>
 
-<pre class="prettyprint linenums">
+<pre>
 What determines who we are? Is it that we settle? What is good enough? Do we find happiness? How do all of these things shape who we are?
 Our "potential" is infinite. As endless as the cosmos. We are endowed with the power, ability and opportunity.
 What gets in the way of our potential? Lack of drive? Lack of interest? Distractions? More likely: Not knowing what you really want.
