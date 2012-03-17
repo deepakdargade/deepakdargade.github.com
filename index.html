@@ -3,13 +3,15 @@ layout: default
 title: Deepak Dargade
 ---
 
-<div>
-  <h2>Blog Posts</h2>
-    {% for post in site.posts %}
-        <h5><small>{{ post.date | date_to_string }}  &gt;&gt;  </small>  <a href="{{ post.url }}">{{ post.title }}</a></h5>
-    {% endfor %}
-  <!--h1>Prominent Open Source Projects</h1>
-  <ul class="posts">
-    <li><a href="http://github.com/github/gollum/">Gollum:</a> A simple, Git-powered wiki with a sweet API and local frontend.</li>
-  </ul-->
-</div>
+<h2>Blog Posts</h2>
+{% for post in site.posts %}
+  <div class="home_post">
+      <div class="home_title">
+         <a href="{{ post.url }}" class="home_title">{{ post.title }}</a>
+      </div>
+      <div class="home_date">
+         {{ post.date | date_to_string }}
+      </div>
+      <br clear="all">
+   </div>
+{% endfor %}
