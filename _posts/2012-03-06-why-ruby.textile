@@ -3,12 +3,8 @@ layout: post
 title: Why Ruby?
 ---
 
-<div class="post_title">
- {{ page.title }}
-</div>
-<p class="post_date">
-  16 Feb 2012 - Mumbai
-</p>
+<h3>{{ page.title }}</h3>
+<h5><small>6 Mar 2012 - Mumbai</small></h5>
 <p class="post_content"> 
 These days a lot people asked me why I chose ruby.
 I am talking about the language, not the Rails Framework built on top of Ruby. 

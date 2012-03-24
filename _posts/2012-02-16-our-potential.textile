@@ -3,15 +3,12 @@ layout: post
 title: Our Potential
 ---
 
-<div class="post_title">
- {{ page.title }}
-</div>
-<p class="post_date">
-  16 Feb 2012 - Mumbai
-</p>
-<p class="post_content"> 
+<h3>{{ page.title }}</h3>
+<h5><small>16 Feb 2012 - Mumbai</small></h5>
+<p> 
 Today I got an intersting newsletter from <a href="http://gapingvoid.com/" target="_blank">gapingvoid.com</a>
 
+<pre>
 What determines who we are? Is it that we settle? What is good enough? Do we find happiness? How do all of these things shape who we are?
 Our "potential" is infinite. As endless as the cosmos. We are endowed with the power, ability and opportunity.
 What gets in the way of our potential? Lack of drive? Lack of interest? Distractions? More likely: Not knowing what you really want.
@@ -21,4 +18,5 @@ I've always thought that a key to happiness is aligning what you want with what 
 We're not talking morality, we are talking your appetite for 16 hour work days, travel, ass-kissing, office politics, screaming kids, etc.
 If you can live in that sweet spot of doing and getting what you want, you are living your potential.
 And, your potential is all about being happy.
+</pre>
 </p>

@@ -1,0 +1,10 @@
+---
+layout: post
+title: The Classpro Tech Stack
+---
+
+<h3>{{ page.title }}</h3>
+<h5><small>24 Feb 2012 - Mumbai</small></h5>
+<p>
+We just published an overview of the Classpro Tech Stack. If you’re interested in that kind of thing, <a href="http://devblog.classpro.in/" target="_blank">check it out!</a>
+</p>
