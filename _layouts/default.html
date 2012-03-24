@@ -3,9 +3,61 @@
 <head>
    <meta charset="utf-8">
    <meta name="google-site-verification" content="Y8K1CscHwzkRT3EBVghOWZYS9AIHVqbKSg1lCLaSrBY" />
-   <title>Deepak Blog | {{ page.title }}</title>
-   
-  <script type="text/javascript">
+   <title>Deepak Blog | {{ page.title }}</title>      
+   <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+        <div class="row">&nbsp;</div>
+
+        <div class="row">
+          <div class="span1">
+              <a class="thumbnail" href="#">
+                <img src="http://profile.ak.fbcdn.net/hprofile-ak-snc4/48951_1438738048_887277355_t.jpg">
+              </a> 
+          </div>
+          <div class="span7">
+            <h1>Deepak Dargade</h1>
+            <h3>Co-Founder at Classpro | Ruby on Rails Developer</h3>
+          </div>
+        </div>
+        <hr/> 
+
+        <div class="row">
+          <div class="span8">  
+            {{ content }}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span8">
+             <h2>Info</h2>
+              <h4>
+                Hi, I'm Deepak Dargade. I am a rails developer and co-founder at <a href="http://www.classpro.in">classpro</a>.<br><br>
+             </h4>           
+          </div>    
+        </div>
+        
+        <hr/>        
+        <div class="row">
+             <div class="span6">
+                <h4>Find me on:</h4>
+                <a href="http://www.facebook.com/deepakdargade" target="_blank"><img src="/static/images/facebook_32.png" class="thumb_pic"></a>
+                <a href="http://twitter.com/#!/deepakdargade" target="_blank"><img src="/static/images/twitter_32.png" class="thumb_pic"></a>
+                <a href="http://www.linkedin.com/in/deepakdargade" target="_blank"><img src="/static/images/linkedin_32.png" class="thumb_pic"></a>
+                <a href="https://github.com/deepakdargade" target="_blank"><img src="/static/images/github_32.png" class="thumb_pic"></a>
+             </div>
+             <div class="span2">
+                <h4>Contact me:</h4>
+                deepak@classpro.in
+             </div>
+        </div>
+
+  
+  </div>
+
+<script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-28402987-1']);
@@ -18,46 +70,5 @@
   })();
 
 </script>
-      
-   <link rel="stylesheet" href="/css/index.css" type="text/css">
-</head>
-
-<body>
-   <div id="wrapper">
-   <div id="header">
-      <a href="/"><img  src="/static/deepak.jpg" class="profile_pic"></a>
-      <h2>Deepak Dargade</h2><br>
-      <h4>Co-Founder at Classpro | Ruby on Rails Developer</h4>
-   </div>
-   <br clear="all">
-
-   <article>
-      {{ content }}
-
-   <br><br>
-   <h2>Info</h2><br>
-   <div class="home_post">
-      Hi, I'm Deepak Dargade. I am a rails developer and co-founder at <a href="http://www.classpro.in">classpro</a>.<br><br>
-   </div>
-    
-   </article>
-
-   <footer>
-      <div id="find_me">
-         <h4>Find me on:</h4>
-         <div id="social_buttons">
-            <a href="http://www.facebook.com/deepakdargade" target="_blank"><img src="/static/facebook_32.png" class="thumb_pic" /></a>
-            <a href="http://twitter.com/#!/deepakdargade" target="_blank"><img src="/static/twitter_32.png" class="thumb_pic" /></a>
-            <a href="http://www.linkedin.com/in/deepakdargade" target="_blank"><img src="/static/linkedin_32.png" class="thumb_pic" /></a>
-            <a href="https://github.com/deepakdargade" target="_blank"><img src="/static/github_32.png" class="thumb_pic" /></a>
-         </div>
-      </div>
-      <div id="contact_me">
-         <h4>Contact me:</h4>
-         <br>
-         deepak@classpro.in
-      </div>
-   </footer>
-   </div>
 </body>
 </html>

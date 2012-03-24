@@ -4,14 +4,11 @@ title: Deepak Dargade
 ---
 
 <h2>Blog Posts</h2>
+<table class="table">
 {% for post in site.posts %}
-  <div class="home_post">
-      <div class="home_title">
-         <a href="{{ post.url }}" class="home_title">{{ post.title }}</a>
-      </div>
-      <div class="home_date">
-         {{ post.date | date_to_string }}
-      </div>
-      <br clear="all">
-   </div>
+  <tr>
+    <td style="border-top:0px;"><h4><a href="{{ post.url }}">{{ post.title }}</a></h4></td>
+    <td style="text-align:right;border-top:0px;">{{ post.date | date_to_string }}</td>
+  </tr>
 {% endfor %}
+</table>
