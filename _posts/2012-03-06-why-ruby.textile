@@ -22,3 +22,4 @@ clear thinking and creatively.
 
 <strong>P.S.</strong> Yeah! I am another Ruby fanatic.
 </p>
+
