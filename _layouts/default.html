@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,51 +10,28 @@
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width">
    <title>{{ page.title }}</title>
-   <link rel="stylesheet" href="static/css/pure-min.css">
-   <link rel="stylesheet" href="static/css/blog.css">
+   <link rel="stylesheet" href="/static/css/bedrock.min.css">
+   <link rel="stylesheet" href="/static/css/style.min.css">
 </head>
-
-<body>
-
-  <div class="pure-g-r" id="layout">
-    <div class="sidebar pure-u">
-        <header class="header">
-            <hgroup>
-                <h1 class="brand-title">{{ page.title }}</h1>
-                <h2 class="brand-tagline">Co-Founder at Classpro | Ruby fanatic | Rails Developer</h2>
-            </hgroup>
-
-            <!--nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="pure-button" href="http://purecss.io">Pure</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
-                    </li>
-                </ul>
-            </nav-->
-        </header>
-    </div>
-
-
-    <a href="http://www.facebook.com/deepakdargade" target="_blank"><img src="/static/images/facebook_32.png" class="thumb_pic"></a>
-            <a href="http://twitter.com/#!/deepakdargade" target="_blank"><img src="/static/images/twitter_32.png" class="thumb_pic"></a>
-            <a href="http://www.linkedin.com/in/deepakdargade" target="_blank"><img src="/static/images/linkedin_32.png" class="thumb_pic"></a>
-            <a href="https://github.com/deepakdargade" target="_blank"><img src="/static/images/github_32.png" class="thumb_pic"></a>
-
-
-</div>   
-  
-
-
+<body id="hide-grid-1">
   <div id="wrapper">
+    <header>
+      <h1 id="logo"><a href="#">{{ page.title }}</a></h1>
+      <h2>Co-Founder at Classpro | Ruby fanatic | Rails Developer</h2>
+    </header>
 
     <div id="main" role="main">
       {{ content }}
     </div>
-
-  </div>
+    <footer>
+      <a href="http://www.facebook.com/deepakdargade" target="_blank"><img src="/static/images/facebook_32.png" class="thumb_pic"></a>
+            <a href="http://twitter.com/#!/deepakdargade" target="_blank"><img src="/static/images/twitter_32.png" class="thumb_pic"></a>
+            <a href="http://www.linkedin.com/in/deepakdargade" target="_blank"><img src="/static/images/linkedin_32.png" class="thumb_pic"></a>
+            <a href="https://github.com/deepakdargade" target="_blank"><img src="/static/images/github_32.png" class="thumb_pic"></a>
+    </footer>
+  </div><!-- /#wrapper -->
+ 
+  
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
