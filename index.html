@@ -6,13 +6,10 @@ subheading: Co-Founder at Classpro | Rails Developer
 
 <div class="the-grid grid-container gutters">
 	{% for post in paginator.posts %}
-	<div class="grid-1 left">
-    <figure class="circle"></figure>
-  </div>
-  <div class="grid-10 inner">
+  <div class="grid-15 inner">
 		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	</div>
-	<div class="grid-7 right pull-right">
+	<div class="grid-3 right pull-right">
 		<small>{{ post.date | date_to_string }}</small>
 	</div>
   <div class="grid-18 left right">

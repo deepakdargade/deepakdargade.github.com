@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Our Potential
-subheading: 16 Feb 2012, Mumbai
+subheading: 16 Feb 2011, Mumbai
 ---
 
 Today I got an intersting newsletter from <a href="http://gapingvoid.com/" target="_blank">gapingvoid.com</a>
