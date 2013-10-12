@@ -1,0 +1,9 @@
+---
+layout: post
+title: Thought
+subheading: 11 Dec 2011, Mumbai
+---
+
+<code>
+Maybe the best programmers aren’t those who spectacularly solve crazy problems, but those who don’t create them, which is much more silent.
+</code>

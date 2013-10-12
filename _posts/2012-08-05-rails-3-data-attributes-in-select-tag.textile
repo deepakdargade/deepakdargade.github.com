@@ -1,0 +1,13 @@
+---
+layout: post
+title: Rails 3 data attributes in select tag
+subheading: 11 Dec 2011, Mumbai
+---
+
+in Rails we can add custom attributes to select options, using the existing options_for_select helper.
+
+If you need grouped options, you can use the grouped_options_for_select helper, like this (if @continents is an array of continent objects, each having a countries method):
+
+<code>
+<%= f.select :country_id, grouped_options_for_select(@continents.map{ |group| [group.name, group.countries.map{ |c| [c.name, c.id, {'data-currency_code'=>c.currency_code}] } ] }, selected_key = f.object.country_id) %>
+</code>

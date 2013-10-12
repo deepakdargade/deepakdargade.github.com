@@ -1,0 +1,59 @@
+---
+layout: post
+title: Rails on Unicorn - Localhost
+subheading: 11 Apr 2012, Mumbai
+---
+
+Time for flying rainbow horses. Start by installing the Unicorn gem:
+
+<code>
+gem install unicorn
+</code>
+
+You should now have Unicorn installed: unicorn (for non-Rails rack applications) and unicorn_rails (for Rails applications version >= 1.2) should be in your path.
+
+Time to take it for a spin! (You may wish to re-login with su - USERNAME if you haven’t already, this ensures your permission tokens are set, otherwise you will not have write permission to /var/www)
+
+<code>
+rails new unicorn
+</code>
+
+There we go, we now have our Unicorn Rails test app in /var/www! Let’s fetch some Unicorn config and start the madness. We’re going for the unicorn.conf example that comes with the Unicorn source:
+
+<code>
+curl -o config/unicorn.rb
+</code>
+
+<code>
+https://raw.github.com/defunkt/unicorn/master/examples/unicorn.conf.rb
+</code>
+
+You might want to tweak a few things:
+
+<code>
+APP_PATH = "/var/www/unicorn" working_directory APP_PATH
+</code>
+
+<code>
+stderr_path APP_PATH + "/log/unicorn.stderr.log"
+</code>
+
+<code>
+stdout_path APP_PATH + "/log/unicorn.stderr.log"
+</code>
+
+<code>
+pid APP_PATH + "/tmp/pid/unicorn.pid"
+</code>
+
+Our Unicorn is ready! Rainbow magic
+
+Start the Nginx deamon, how this is done depends on your OS. And then start Unicorn:
+
+<code>
+unicorn_rails -c /var/www/unicorn/config/unicorn.rb -D
+</code>
+
+-D deamonizes it. -c should be pretty obvious; it specifies the configuration. In production you will probably want to pass -E production as well to run the app in the production environment.
+
+That’s it! Visiting localhost should take you to the Rails default page.
