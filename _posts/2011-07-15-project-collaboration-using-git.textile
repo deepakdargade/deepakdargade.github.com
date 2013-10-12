@@ -1,0 +1,127 @@
+---
+layout: post
+title: Project collaboration using Git
+subheading: 15 July 2011, Mumbai
+---
+
+Install Git on both Server and Client machines.
+
+if you’re on a Debian-based distribution like Ubuntu, try apt-get to install Git:
+<code>
+apt-get install git-core
+</code>
+
+<h2>Preferred way of doing GIT on server:</h2>
+
+In order to initially set up any Git server, you have to export an existing repository into a new bare repository — a repository that doesn’t contain a working directory.
+
+This is generally straightforward to do.
+In order to clone your repository to create a new bare repository, you run the clone command with the --bare option. By convention, bare repository directories end in .git, like so:
+
+<code>
+git clone --bare my_project.git
+</code>
+output:
+<code>
+Initialized empty Git repository in /var/www/my_project.git/
+warning: this creates an empty git repository.
+</code>
+
+<h2>On Client machine</h2>
+
+<b>Step 1 on client machine clone the remote repository using,</b>
+
+<code>
+git clone user@www.deepakdargade.me:/var/www/my_app.git
+</code>
+
+output:
+Initialized empty Git repository in /var/www/my_app/.git/
+warning: You appear to have cloned an empty repository.
+
+<b>Step 2 create a Readme file inside the my_app folder and add it to the stage and commit it,</b>
+
+<code>
+git add Readme<br/>
+git status<br/>
+git commit -m "Initial commit adding readme file"
+</code>
+
+<b>Step 3 check the remote repository information using</b>
+
+<code>
+git remote -v
+</code>
+
+output:
+origin  user@www.deepakdargade.me:/var/www/my_app.git (fetch)
+origin  user@www.deepakdargade.me:/var/www/my_app.git (push)
+
+<b>Step 4 check your branches in local repository</b>
+
+<code>
+git branch
+</code>
+
+output:
+* master
+
+
+<b>Step 5 lets create a new branch that reflect new code in the project.</b>
+
+<code>
+git checkout -b develop master
+</code>
+
+output:
+Switched to a new branch 'develop'
+
+<b>Step 6 again, check your branches in local repository</b>
+
+<code>
+git branch
+</code>
+
+output:
+* develop
+  master
+
+<b>Step 7 lets switch to master branch</b>
+
+<code>
+git checkout master
+</code>
+
+output:
+Switched to branch 'master'
+
+<b>Step 8 adding remote path to git</b>
+
+<code>
+git remote add origin ssh://user@www.deepakdargade.me/var/www/my_app.git
+</code>
+
+<b>Step 9 pushing local master code to remote repository</b>
+
+<code>
+git push origin master
+</code>
+
+<b>Step 9 same way push the develop code to remote repository</b>
+
+<code>
+git push origin develop
+</code>
+
+<b>Step 10 to fetch the latest code from the remote repository</b>
+
+<code>
+git fetch origin < branch name > 
+</code>
+
+
+<b>Git Tips: To remove a file(s) from Git</b>
+
+<code>
+git rm --cached < file path > 
+</code>

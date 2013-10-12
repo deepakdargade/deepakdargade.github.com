@@ -1,0 +1,51 @@
+---
+layout: post
+title: Git on local machine
+subheading: 14 July 2011, Mumbai
+---
+
+Git is a Distributed VCS, and if you have experience with Subversion or CVS before it, you need to change your mind.
+
+Git is a very agile and you can use different workflows with it. Cloning repositories is more needed for a team work, not for local development (IMHO).
+
+Branches is a good alternative for you.
+
+See. Let's set master branch of your repository for a production-ready code. Let's create another branch for development:
+
+<code>
+$ git checkout -b development master
+</code>
+
+Now you are working on the development branch.
+
+You could use different branches for each feature you want to develop. It's very easy and helpful.
+
+Let's imagine you want to implement some new feature, you need to create a new branch:
+
+<code>
+$ git checkout -b newfeature development
+</code>
+
+Now you can work with your code, add files, commit and so on.
+
+Next you need to merge your new developed feature to the development branch:
+
+<code>
+$ git add .
+</code>
+<code>
+$ git commit -m "My last changes for the new feature"
+</code>
+<code>
+$ git checkout development $ git merge newfeature
+</code>
+
+Now your new code from the newfeature branch merged into the development branch.
+
+For sometime in the future when you decide that your code in the development branch get some milestone, you could merge all the changes from development to master branch.
+
+It's a very basic workflow, it can be helpful for the many branches.
+
+My advise for you now: read more about git, branching, stashing (very-very-very helpful for quick fixes). And after some time you will get a great effort from using git.
+
+Good luck.

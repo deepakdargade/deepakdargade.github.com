@@ -67,3 +67,16 @@ hr{
     clear: both;
     margin: 40px 0;
 }
+
+.read-more{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+code{
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    display: block;
+    border-left: 2px solid #C83718;
+}
