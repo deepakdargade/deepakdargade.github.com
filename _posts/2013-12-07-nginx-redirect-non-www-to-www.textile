@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Nginx - Redirect non www to www
-subheading: 7 Dec 2013, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Nginx - Redirect non www to www
+datePublished: 7 Dec 2013, Mumbai
+datetime: 2013-12-07T22:00
 ---
 
 <h4>Redirect non-www to WWW</h4>

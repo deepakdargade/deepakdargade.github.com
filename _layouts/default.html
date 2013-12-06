@@ -22,8 +22,22 @@
       <hr/>
     </header>
 
-    <div id="main" role="main">
-      {{ content }}
+    <div id="main" role="main" itemscope="" itemtype="http://schema.org/BlogPosting">
+      <h2 itemprop="name headline">{{ page.headline }}</h2>
+      <div class="">
+          Written by
+          <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+              <span itemprop="name">
+                  <a href="https://plus.google.com/+deepakdargade" itemprop="url" rel="author" target="_blank">Deepak Dargade</a>
+              </span>
+          </span>
+          on
+          <time datetime="{{ page.datetime }}" itemprop="datePublished">{{ page.datePublished }}</time>
+      </div>
+      <br/>
+      <div class="content" itemprop="articleBody">
+        {{ content }}
+      </div>
     </div>
 
     <footer></footer>
