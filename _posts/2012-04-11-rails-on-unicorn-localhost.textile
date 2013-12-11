@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Rails on Unicorn - Localhost
-subheading: 11 Apr 2012, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Rails on Unicorn - Localhost
+datePublished: 11 Apr 2012, Mumbai
+datetime: 2011-04-11T23:00
 ---
 
 Time for flying rainbow horses. Start by installing the Unicorn gem:

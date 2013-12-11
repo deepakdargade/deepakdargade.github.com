@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Project collaboration using Git
-subheading: 15 July 2011, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Project collaboration using Git
+datePublished: 15 July 2011, Mumbai
+datetime: 2011-07-15T11:00
 ---
 
 Install Git on both Server and Client machines.

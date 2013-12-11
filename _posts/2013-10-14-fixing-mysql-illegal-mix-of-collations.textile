@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Fixing MySQL’s Illegal Mix of Collations
-subheading: 14 Oct 2013, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Fixing MySQL’s Illegal Mix of Collations
+datePublished: 14 Oct 2013, Mumbai
+datetime: 2013-10-14T10:00
 ---
 
 I recently started to encounter MySQL’s dreaded illegal-mix-of-collations error. The occasional query would result in Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='.

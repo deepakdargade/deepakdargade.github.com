@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Adding cron jobs in Linux
-subheading: 11 July 2011, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Adding cron jobs in Linux
+datePublished: 11 July 2011, Mumbai
+datetime: 2011-07-11T09:00
 ---
 
 Cron is a Linux system process that will execute a program at a preset time.

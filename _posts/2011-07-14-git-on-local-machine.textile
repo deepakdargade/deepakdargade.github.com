@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Git on local machine
-subheading: 14 July 2011, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Git on local machine
+datePublished: 14 July 2011, Mumbai
+datetime: 2011-07-14T11:00
 ---
 
 Git is a Distributed VCS, and if you have experience with Subversion or CVS before it, you need to change your mind.

@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Our Potential
-subheading: 16 Feb 2011, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Our Potential
+datePublished: 16 Feb 2011, Mumbai
+datetime: 2011-02-16T06:00
 ---
 
 Today I got an intersting newsletter from <a href="http://gapingvoid.com/" target="_blank">gapingvoid.com</a>

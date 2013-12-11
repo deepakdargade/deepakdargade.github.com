@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Ruby on Rails to_json with include
-subheading: 11 Dec 2011, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Ruby on Rails to_json with include
+datePublished: 11 Dec 2011, Mumbai
+datetime: 2011-12-11T23:00
 ---
 
 If the models aren't associated through active record, then fetching json data is pretty simple in Ruby on Rails.

@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Position of callbacks is important in Rails Model
-subheading: 29 Feb 2012, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Position of callbacks is important in Rails Model
+datePublished: 29 Feb 2012, Mumbai
+datetime: 2012-02-29T23:00
 ---
 
 Yesterday i was working on destroy action of a model in. Before deletion I had to check whether the model has any child model or not. Even the model has child model, but deletion was successful even though i had set to false.

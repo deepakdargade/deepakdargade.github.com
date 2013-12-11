@@ -24,6 +24,8 @@
 
     <div id="main" role="main" itemscope="" itemtype="http://schema.org/BlogPosting">
       <h2 itemprop="name headline">{{ page.headline }}</h2>
+      
+      {% if page.datePublished %}
       <div class="">
           Written by
           <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -36,6 +38,8 @@
           <time datetime="{{ page.datetime }}" itemprop="datePublished">{{ page.datePublished }}</time>
       </div>
       <br/>
+      {% endif %}
+
       <div class="content" itemprop="articleBody">
         {{ content }}
       </div>

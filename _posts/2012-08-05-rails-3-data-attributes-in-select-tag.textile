@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Rails 3 data attributes in select tag
-subheading: 11 Dec 2011, Mumbai
+title: Deepak Dargade
+subheading: Co-Founder at Classpro | Rails Developer
+headline: Rails 3 data attributes in select tag
+datePublished: 11 Dec 2011, Mumbai
+datetime: 2011-12-11T23:00
 ---
 
 in Rails we can add custom attributes to select options, using the existing options_for_select helper.
