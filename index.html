@@ -4,21 +4,27 @@ title: Deepak Dargade
 subheading: Co-Founder at Classpro | Rails Developer
 ---
 
-<div class="the-grid grid-container gutters">
-	{% for post in paginator.posts %}
-  <div class="grid-15 inner">
-		<h2><a href="{{ post.url }}">{{ post.headline }}</a></h2>
-	</div>
-	<div class="grid-3 right pull-right">
-		<small>{{ post.date | date_to_string }}</small>
-	</div>
-  <div class="grid-18 left right">
-    {{ post.excerpt }}
-    <a class="read-more" href="{{ post.url }}">continue reading..</a>
-    <hr/>
+<div class="home-page-posts animated fadeIn ">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <section>
+      <div class="post-preview col-xs-10  no-gutter">
+        <h2><a href="{{ post.url }}">{{ post.headline }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+
+        <p class="meta">
+        <!--a class="" href="category.html">James Reddy</a> in <a class="" href="category.html">Storytime</a> <i class="link-spacer"></i-->
+        <i class="entypo-bookmark"></i> {{ post.date | date_to_string }}
+        </p>
+      </div>
+
+      <div class=" col-xs-2  no-gutter">
+        <img src="/static/images/deepak.jpg" class="user-icon user-1" alt="user-image">
+      </div>
+    </section>
   </div>
-	{% endfor %}
-</div>
+  {% endfor %}
+</div><!-- Home page posts -->
 
 <div id="pagination" class="the-grid gutters grid-container">
   <div class="grid-12 left">
