@@ -153,19 +153,19 @@ pre {
 }
 
 .image-bg {
-	background-image: url('../img/img5.jpg');
+	background-image: url('/static/images/1.jpg');
 }
 .image-bg2 {
-	background-image: url('../img/img1.jpg');
+	background-image: url('/static/images/2.jpg');
 }
 .image-bg3 {
-	 background-image: url('../img/img4.jpg'); 
+	 background-image: url('/static/images/1.jpg');
 }
 .image-bg4 {
-	background-image: url('../img/img7.jpg');  
+	background-image: url('/static/images/1.jpg');
 }
 .image-bg5 {
-	background-image: url('../img/img3.jpg');  
+	background-image: url('/static/images/1.jpg');
 }
 
 /* ------------------------ animations ------------------------ */
