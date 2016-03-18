@@ -2,3 +2,4 @@ markdown: rdiscount
 highlighter: pygments
 paginate: 10
 paginate_path: "blog/:num"
+gems: [jekyll-paginate]

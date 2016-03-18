@@ -5,59 +5,74 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta charset="utf-8">
   <meta name="google-site-verification" content="Y8K1CscHwzkRT3EBVghOWZYS9AIHVqbKSg1lCLaSrBY" />
-  <meta name="description" content="Starter | Co-Founder at classpro.in">
+  <meta name="description" content="I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast. Best known for turning ideas into reality and Co-founder of Classpro.">
   <meta name="author" content="deepak dargade">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="/static/css/milligram.min.css">
+  <style type="text/css">
+    .header {
+        background-color: #f4f5f6;
+        padding: 2rem;
+        margin-bottom: 50px;
+      }
+      .header .container {
+        position: relative;
+        border-top: 0;
+        text-align: left;
+      }
+      .header .title {
+        
+      }
+      .header .img {
+        height: 15.0rem;
+        margin-bottom: 2rem;
+      }
+      .header + section {
+        border-top: 0;
+      }
+      .header .button {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+      @media (min-width: 40.0rem) {
+        .header .button {
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+        }
+      }
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Merriweather:400,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Merriweather:400,400italic,700italic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/css/style.css">
-  <link rel="stylesheet" href="/static/css/animate.min.css">
+      a{
+        color: #00796b;
+      }
+      pre{
+        border-left: .3rem solid #00796b;
+        padding: 25px;
+      }
+  </style>
 </head>
 
 <body id="home">
-  <div id="wrap">
-
-    <section id="hero" class="light-typo">
-      <div id="cover-image" class="image-bg animated fadeIn"></div>
-      <div class="container welcome-content">
-        <div class="middle-text">
-          <h1>{{ page.title }}</h1>
-          <h2>{{ page.subheading }}</h2>
-        </div>
-      </div>
+  
+  <header class="header">
+    <section class="container">
+      <h3 class="title">
+        <a href="/" title="{{ page.title }}">{{ page.title }}</a>.
+      </h3>
+      <p class="description">{{ page.subheading }}</p>
     </section>
+  </header>
 
-    <div id="start" class="container content">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          {{ content }}
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        {{ content }}
       </div>
     </div>
-
-    <footer>
-      <div class="copyright">
-        <div class="container">
-          <p class="pull-right">Deepak Dargade</a></p>
-          <ul class="social-links pull-right">
-            <li><a href="#link"><i class="icon-twitter"></i></a></li>
-            <li><a href="#link"><i class="icon-facebook"></i></a></li>
-            <li><a href="#link"><i class="icon-googleplus"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
   </div>
-
-  <script type="text/javascript" src="/static/js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/static/js/placeholders.min.js"></script>
-  <script type="text/javascript" src="/static/js/wow.min.js"></script>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
