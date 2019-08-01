@@ -1,5 +1,5 @@
 markdown: rdiscount
-highlighter: pygments
+highlighter: rouge
 paginate: 10
 paginate_path: "blog/:num"
 gems: [jekyll-paginate]
