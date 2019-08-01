@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="Y8K1CscHwzkRT3EBVghOWZYS9AIHVqbKSg1lCLaSrBY" />
+  <meta name="description" content="I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast. Best known for turning ideas into reality and Co-founder of Classpro.">
+  <meta name="author" content="deepak dargade">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Deepak Dargade</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="/static/css/milligram.min.css">
+  <style type="text/css">
+    .header {
+        background-color: #f4f5f6;
+        padding: 2rem;
+        margin-bottom: 50px;
+      }
+      .header .container {
+        position: relative;
+        border-top: 0;
+        text-align: left;
+      }
+      .header .title {
+        
+      }
+      .header .img {
+        height: 15.0rem;
+        margin-bottom: 2rem;
+      }
+      .header + section {
+        border-top: 0;
+      }
+      .header .button {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+      @media (min-width: 40.0rem) {
+        .header .button {
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+        }
+      }
+
+      a{
+        color: #00796b;
+      }
+      pre{
+        border-left: .3rem solid #00796b;
+        padding: 25px;
+      }
+  </style>
+</head>
+
+<body id="home">
+  
+  <header class="header">
+    <section class="container">
+      <h3 class="title">
+        <a href="/" title="Deepak Dargade">Deepak Dargade</a>.
+      </h3>
+      <p class="description">I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.<br/>Best known for turning ideas into reality and Co-founder of Classpro.</p>
+    </section>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="row">
+  <div class="column">
+    <p>Install Git on both Server and Client machines.</p>
+
+<p>if you’re on a Debian-based distribution like Ubuntu, try apt-get to install Git:</p>
+<pre>
+apt-get install git-core
+</pre>
+
+<h2>Preferred way of doing GIT on server:</h2>
+
+<p>In order to initially set up any Git server, you have to export an existing repository into a new bare repository — a repository that doesn’t contain a working directory.</p>
+
+<p>This is generally straightforward to do.
+In order to clone your repository to create a new bare repository, you run the clone command with the –bare option. By convention, bare repository directories end in .git, like so:</p>
+
+<pre>
+git clone --bare my_project.git
+</pre>
+<p>output:</p>
+<pre>
+Initialized empty Git repository in /var/www/my_project.git/
+warning: this creates an empty git repository.
+</pre>
+
+<h2>On Client machine</h2>
+
+<p><b>Step 1 on client machine clone the remote repository using,</b></p>
+
+<pre>
+git clone user@www.deepakdargade.me:/var/www/my_app.git
+</pre>
+
+<p>output:
+Initialized empty Git repository in /var/www/my_app/.git/
+warning: You appear to have cloned an empty repository.</p>
+
+<p><b>Step 2 create a Readme file inside the my_app folder and add it to the stage and commit it,</b></p>
+
+<pre>
+git add Readme<br />
+git status<br />
+git commit -m "Initial commit adding readme file"
+</pre>
+
+<p><b>Step 3 check the remote repository information using</b></p>
+
+<pre>
+git remote -v
+</pre>
+
+<p>output:
+origin  user@www.deepakdargade.me:/var/www/my_app.git (fetch)
+origin  user@www.deepakdargade.me:/var/www/my_app.git (push)</p>
+
+<p><b>Step 4 check your branches in local repository</b></p>
+
+<pre>
+git branch
+</pre>
+
+<p>output:</p>
+<ul>
+  <li>master</li>
+</ul>
+
+<p><b>Step 5 lets create a new branch that reflect new pre in the project.</b></p>
+
+<pre>
+git checkout -b develop master
+</pre>
+
+<p>output:
+Switched to a new branch ‘develop’</p>
+
+<p><b>Step 6 again, check your branches in local repository</b></p>
+
+<pre>
+git branch
+</pre>
+
+<p>output:</p>
+<ul>
+  <li>develop
+master</li>
+</ul>
+
+<p><b>Step 7 lets switch to master branch</b></p>
+
+<pre>
+git checkout master
+</pre>
+
+<p>output:
+Switched to branch ‘master’</p>
+
+<p><b>Step 8 adding remote path to git</b></p>
+
+<pre>
+git remote add origin ssh://user@www.deepakdargade.me/var/www/my_app.git
+</pre>
+
+<p><b>Step 9 pushing local master pre to remote repository</b></p>
+
+<pre>
+git push origin master
+</pre>
+
+<p><b>Step 9 same way push the develop pre to remote repository</b></p>
+
+<pre>
+git push origin develop
+</pre>
+
+<p><b>Step 10 to fetch the latest pre from the remote repository</b></p>
+
+<pre>
+git fetch origin &lt; branch name &gt; 
+</pre>
+
+<p><b>Git Tips: To remove a file(s) from Git</b></p>
+
+<pre>
+git rm --cached &lt; file path &gt; 
+</pre>
+
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28402987-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  
+</body>
+</html>

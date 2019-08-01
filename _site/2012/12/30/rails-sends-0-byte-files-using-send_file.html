@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="Y8K1CscHwzkRT3EBVghOWZYS9AIHVqbKSg1lCLaSrBY" />
+  <meta name="description" content="I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast. Best known for turning ideas into reality and Co-founder of Classpro.">
+  <meta name="author" content="deepak dargade">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Deepak Dargade</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="/static/css/milligram.min.css">
+  <style type="text/css">
+    .header {
+        background-color: #f4f5f6;
+        padding: 2rem;
+        margin-bottom: 50px;
+      }
+      .header .container {
+        position: relative;
+        border-top: 0;
+        text-align: left;
+      }
+      .header .title {
+        
+      }
+      .header .img {
+        height: 15.0rem;
+        margin-bottom: 2rem;
+      }
+      .header + section {
+        border-top: 0;
+      }
+      .header .button {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+      @media (min-width: 40.0rem) {
+        .header .button {
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+        }
+      }
+
+      a{
+        color: #00796b;
+      }
+      pre{
+        border-left: .3rem solid #00796b;
+        padding: 25px;
+      }
+  </style>
+</head>
+
+<body id="home">
+  
+  <header class="header">
+    <section class="container">
+      <h3 class="title">
+        <a href="/" title="Deepak Dargade">Deepak Dargade</a>.
+      </h3>
+      <p class="description">I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.<br/>Best known for turning ideas into reality and Co-founder of Classpro.</p>
+    </section>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="row">
+  <div class="column">
+    <p>send_file has :x_sendfile param which defaults to true in Rails 3.</p>
+
+<p>This feature offloads streaming download to front server - Apache (with mod_xsendfile) or lighttpd, by returning empty response with X-Sendfile header with path.</p>
+
+<p>Nginx uses X-Accel-Redirect header for same functionality but you have to configure Rails properly in proper environment file:</p>
+
+<pre>
+config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+</pre>
+
+<p><b>Rails 3 update: this line already exists in production.rb, just uncomment it.</b></p>
+
+<p>Add <b>sendfile on;</b> to your nginx config to utilize header sent by Rails.
+Remember the absolute path must be used and nginx must have read access to file.</p>
+
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28402987-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  
+</body>
+</html>
