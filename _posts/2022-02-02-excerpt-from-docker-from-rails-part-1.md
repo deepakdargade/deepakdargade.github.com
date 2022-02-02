@@ -7,7 +7,7 @@ datePublished: 02 Feb 2022, Mumbai
 datetime: 2022-02-02T20:55
 ---
 
-# Docker for rails developers:
+<h3>Docker for rails developers:</h3>
 
 1. We ran our first ever Docker command, a helloworld Ruby script, without needing Ruby installed on our machine.
 ```
