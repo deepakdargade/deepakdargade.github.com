@@ -1,0 +1,95 @@
+I"�<p>I recently started to encounter MySQL’s dreaded illegal-mix-of-collations error. The occasional query would result in Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation ‘=’.</p>
+
+<pre>
+Mysql2::Error: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE)
+</pre>
+
+<p>MySQL’s default character set is latin1 with an adventurous Swedish collation, which presumably seemed like a good idea at the time. However Rails uses UTF-8 everywhere and from time to time the two collations collide.</p>
+
+<p><br /></p>
+<h3>How I solved it:</h3>
+<p>First figure out where you stand. In MySQL do this:</p>
+
+<p>mysql&gt; show variables like ‘char%’;
+The result you want is this:</p>
+
+<pre>
++--------------------------+----------------------------+
+| Variable_name            | Value                      |
++--------------------------+----------------------------+
+| character_set_client     | utf8                       |
+| character_set_connection | utf8                       |
+| character_set_database   | utf8                       |
+| character_set_filesystem | binary                     |
+| character_set_results    | utf8                       |
+| character_set_server     | utf8                       |
+| character_set_system     | utf8                       |
+| character_sets_dir       | /usr/share/mysql/charsets/ |
++--------------------------+----------------------------+
+</pre>
+
+<p>At this stage several of these values will be latin1.</p>
+
+<p>Similarly for collation:</p>
+
+<pre>
+mysql&gt; show variables like 'collation%';
++----------------------+-----------------+
+| Variable_name        | Value           |
++----------------------+-----------------+
+| collation_connection | utf8_general_ci |
+| collation_database   | utf8_general_ci |
+| collation_server     | utf8_general_ci |
++----------------------+-----------------+
+</pre>
+
+<p>The utf8_general_ci collation will do but ideally we want utf8_unipre_ci. The former basically ignores all accents: it treats ‘ü’ the same as ‘u’. The latter pays attention to accents; it’s a tiny bit slower but more accurate.</p>
+
+<p>To see what your tables are using:</p>
+
+<pre>
+mysql&gt; show table status \G
+</pre>
+
+<p>…and look at the Collation field in each table.</p>
+
+<p><br /></p>
+<h3>Configuring MySQL to use UTF8</h3>
+<p>I added this configuration to /etc/mysql/my.cnf (on Ubuntu 10.04):</p>
+
+<pre>
+[mysqld]
+character-set-server=utf8
+collation-server=utf8_general_ci
+</pre>
+
+<p>After I had done all this and restarted mysql, I found all the character_set_* variables were correct except character_set_database. To fix this:</p>
+
+<pre>
+mysql&gt; alter database DATABASE default character set utf8;
+</pre>
+<pre>
+mysql&gt; alter database DATABASE default collate utf8_general_ci;
+</pre>
+<pre>
+mysql&gt; ALTER TABLE tablename CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+</pre>
+
+<p><br /></p>
+<h3>Verifying everything worked</h3>
+
+<p>In the MySQL console I ran these:</p>
+
+<pre>
+mysql&gt; show variables like 'char%';
+mysql&gt; show variables like 'collation%';
+mysql&gt; show create database DATABASE;
+mysql&gt; show table status \G
+</pre>
+
+<p>And then in the Rails console:</p>
+<pre>
+&gt;&gt; ActiveRecord::Base.connection.collation
+"utf_general_ci"
+</pre>
+:ET

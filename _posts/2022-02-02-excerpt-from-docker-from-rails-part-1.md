@@ -2,7 +2,7 @@
 layout: post
 title: Deepak Dargade
 subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.<br/>Best known for turning ideas into reality and Co-founder of Classpro.
-headline: Excerpt from Docker for Rails Developers - Part #1
+headline: Excerpt from Docker for Rails Developers - Part 1
 datePublished: 02 Feb 2022, Mumbai
 datetime: 2022-02-02T20:55
 ---

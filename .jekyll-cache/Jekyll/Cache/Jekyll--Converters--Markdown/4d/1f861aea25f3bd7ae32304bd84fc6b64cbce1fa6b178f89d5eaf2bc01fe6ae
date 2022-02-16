@@ -1,0 +1,8 @@
+I"<p>in Rails we can add custom attributes to select options, using the existing options_for_select helper.</p>
+
+<p>If you need grouped options, you can use the grouped_options_for_select helper, like this (if @continents is an array of continent objects, each having a countries method):</p>
+
+<pre>
+&lt;%= f.select :country_id, grouped_options_for_select(@continents.map{ |group| [group.name, group.countries.map{ |c| [c.name, c.id, {'data-currency_pre'=&gt;c.currency_pre}] } ] }, selected_key = f.object.country_id) %&gt;
+</pre>
+:ET

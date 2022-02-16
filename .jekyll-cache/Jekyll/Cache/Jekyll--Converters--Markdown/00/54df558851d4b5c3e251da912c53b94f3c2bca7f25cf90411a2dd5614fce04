@@ -1,0 +1,15 @@
+I"Ë<p>send_file has :x_sendfile param which defaults to true in Rails 3.</p>
+
+<p>This feature offloads streaming download to front server - Apache (with mod_xsendfile) or lighttpd, by returning empty response with X-Sendfile header with path.</p>
+
+<p>Nginx uses X-Accel-Redirect header for same functionality but you have to configure Rails properly in proper environment file:</p>
+
+<pre>
+config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+</pre>
+
+<p><b>Rails 3 update: this line already exists in production.rb, just uncomment it.</b></p>
+
+<p>Add <b>sendfile on;</b> to your nginx config to utilize header sent by Rails.
+Remember the absolute path must be used and nginx must have read access to file.</p>
+:ET

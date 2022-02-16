@@ -1,0 +1,15 @@
+I"­<p>If the models arenâ€™t associated through active record, then fetching json data is pretty simple in Ruby on Rails.</p>
+<pre>
+respond_to do |format|
+  format.json  { render :json =&gt; @order}
+end
+</pre>
+
+<p>If an association does exist, you can pass an :include argument to the render call, like so:</p>
+
+<pre>
+respond_to do |format|
+  format.json  { render :json =&gt; @order.to_json(:include =&gt; [:payments])}
+end
+</pre>
+:ET

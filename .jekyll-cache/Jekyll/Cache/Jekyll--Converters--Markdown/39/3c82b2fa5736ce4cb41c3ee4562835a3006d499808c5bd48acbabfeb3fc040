@@ -1,0 +1,20 @@
+I"÷<p>To enable binary log in Mysql, edit the file:</p>
+
+<pre>
+/etc/mysql/my.cnf
+</pre>
+
+<p>Uncomment the log_bin line:</p>
+
+<pre>
+log_bin = /var/log/mysql/mysql-bin.log
+</pre>
+
+<pre>
+expire_logs_days = 10
+</pre>
+
+<pre>
+max_binlog_size = 100M
+</pre>
+:ET

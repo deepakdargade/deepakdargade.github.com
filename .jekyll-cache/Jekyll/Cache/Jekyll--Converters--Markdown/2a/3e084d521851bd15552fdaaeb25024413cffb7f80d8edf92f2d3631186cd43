@@ -1,0 +1,47 @@
+I"�<p>Nginx 301 redirect (non-www to www – traditional way)</p>
+
+<pre>
+server{
+  server_name domain.com;
+  rewrite ^(.*) https://www.domain.com$1 permanent;
+}
+</pre>
+
+<p>You should never use a rewrite.</p>
+
+<p>Why? Because nginx has to process and start a search.</p>
+
+<p>But if you use <b>return</b>, it directly stops execution. This is more preferred.</p>
+
+<p>Nginx 301 redirect (non-www to www – new, efficient, &amp; the best way)</p>
+
+<pre>
+server{
+  listen  80;
+  server_name  domain.com;
+  return  301 $scheme://www.domain.com$request_uri;
+}
+
+server{
+  listen 443;
+  server_name  domain.com;
+  ssl on;
+  ssl_certificate path_to_ssl.crt;
+  ssl_certificate_key path_to_ssl.key;
+  return 301 https://www.domain.com$request_uri;
+}
+
+server{
+  listen 443;
+  server_name www.domain.com;
+  root /var/www/student-performance/public;
+  ssl on;
+  ssl_certificate path_to_ssl.crt;
+  ssl_certificate_key path_to_ssl.key;
+  passenger_enabled on;
+
+  #rest of configuration
+
+}
+</pre>
+:ET
