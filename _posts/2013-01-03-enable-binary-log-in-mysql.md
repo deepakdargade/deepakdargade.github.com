@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deepak Dargade
-subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.<br/>Best known for turning ideas into reality and Co-founder of Classpro.
+subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.
 headline: Enable binary log in Mysql
 datePublished: 03 Jan 2013, Mumbai
 datetime: 2013-01-03T15:00

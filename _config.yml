@@ -6,3 +6,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 # plugins: [jekyll-paginate]
+
+author: Deepak Dargade
+description: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.
+lang: en
+locale: en_US
+url: "https://www.deepakdargade.com"
+baseurl: ""

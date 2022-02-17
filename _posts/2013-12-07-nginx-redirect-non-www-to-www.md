@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deepak Dargade
-subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.<br/>Best known for turning ideas into reality and Co-founder of Classpro.
+subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.
 headline: Nginx - Redirect non www to www
 datePublished: 7 Dec 2013, Mumbai
 datetime: 2013-12-07T22:00

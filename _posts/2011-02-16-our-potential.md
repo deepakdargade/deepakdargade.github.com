@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deepak Dargade
-subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.<br/>Best known for turning ideas into reality and Co-founder of Classpro.
+subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.
 headline: Our Potential
 datePublished: 16 Feb 2011, Mumbai
 datetime: 2011-02-16T06:00

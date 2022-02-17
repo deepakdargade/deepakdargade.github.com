@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deepak Dargade
-subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.<br/>Best known for turning ideas into reality and Co-founder of Classpro.
+subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.
 headline: ActionMailer 3.2.0 Upgrade SSL Issue
 datePublished: 06 Mar 2012, Mumbai
 datetime: 2012-03-06T23:00

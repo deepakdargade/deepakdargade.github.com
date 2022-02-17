@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deepak Dargade
-subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.<br/>Best known for turning ideas into reality and Co-founder of Classpro.
+subheading: I'm a Mumbai-based Entrepreneur, Ruby on Rails monomaniac and Food enthusiast.
 headline: Position of callbacks is important in Rails Model
 datePublished: 29 Feb 2012, Mumbai
 datetime: 2012-02-29T23:00
