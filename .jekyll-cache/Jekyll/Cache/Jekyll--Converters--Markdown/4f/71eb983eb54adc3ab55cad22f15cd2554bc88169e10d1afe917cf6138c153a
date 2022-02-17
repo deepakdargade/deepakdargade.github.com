@@ -1,0 +1,2 @@
+I"–<p>I upgraded my Rails app to Rails 3.2.0 from 3.1.3 and found that my SMTP outgoing mail was no longer able to authenticate with my mail server.</p>
+:ET
